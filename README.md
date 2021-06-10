@@ -1,31 +1,14 @@
 
-## Dev Portfolio
+## Raunak's Portfolio
 
 
-Software Developer Portfolio Template that helps you showcase your work and skills as a software developer. A lightweight, customizable single-page personal portfolio website template built using Dart, Flutter web.
-
-
-
-
-## To view a live demo,[Click Here](https://champ96k.github.io).
+A lightweight, customizable single-page personal portfolio website template built using Dart, Flutter web. It helps to showcase my work and skills as a software developer. 
 
 
 
-##  Platforms
 
--  [X] Andoid
--  [X] Windows
--  [X] linux
--  [ ] MacOS (probably)
--  [X] IOs
+## To view a live demo,[Click Here](https://abc.github.io).
    
-   
-##  Wanna Contribute? 🚀
-  You can contribute by doing one of the following:
-  - Starring the repository ⭐
-  - Forking the repository 🍴
-  - Creating an Issue ❌
-  - Creating a Pull Request ✔
 
 
 ## Web Set up
@@ -39,20 +22,6 @@ flutter upgrade
 ```
 ```bash
 flutter config --enable-web
-```
-### Create and run
-  To create a new app for use with web support (in addition to mobile support), run the following commands, substituting myap   with the name of your project:
-
-```bash
-flutter create myapp
-```
-```bash
- cd myapp
- ```
-To serve your app from localhost in Chrome, enter the following from the top of the package:
-
-```bash
-flutter run -d chrome
 ```
 
 ### Add web support to an existing app
@@ -75,12 +44,3 @@ Run the following command to generate a release build:
  
 ***
 
-
-
-
-##### Design credit : [Brittany Chiang](https://www.linkedin.com/in/bchiang7/).
-
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.

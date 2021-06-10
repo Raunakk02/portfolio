@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:potrtfolio/Widget/CustomText.dart';
+import 'package:portfolio/Widget/CustomText.dart';
 
 class About extends StatelessWidget {
   Widget technology(BuildContext context, String text) {
@@ -223,7 +223,7 @@ class _CustomImageAnimationState extends State<CustomImageAnimation> {
             color: Colors.black54,
             child: Image(
               fit: BoxFit.cover,
-              image: AssetImage("images/pic1.jpeg"),
+              image: AssetImage("images/pic1.jpg"),
             ),
           ),
           Container(

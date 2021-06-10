@@ -1,6 +1,6 @@
 import 'package:flutter/widgets.dart';
-import 'package:potrtfolio/UI/HomePage.dart';
-import 'package:potrtfolio/UI/MobileHome.dart';
+import 'package:portfolio/UI/HomePage.dart';
+import 'package:portfolio/UI/MobileHome.dart';
 
 class Home extends StatefulWidget {
   @override

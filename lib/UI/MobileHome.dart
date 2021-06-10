@@ -1,10 +1,10 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:potrtfolio/Model/Method.dart';
-import 'package:potrtfolio/Widget/CustomText.dart';
-import 'package:potrtfolio/Widget/MobileProject.dart';
-import 'package:potrtfolio/Widget/MobileWork.dart';
+import 'package:portfolio/Model/Method.dart';
+import 'package:portfolio/Widget/CustomText.dart';
+import 'package:portfolio/Widget/MobileProject.dart';
+import 'package:portfolio/Widget/MobileWork.dart';
 
 class MobileHome extends StatefulWidget {
   @override
@@ -45,19 +45,25 @@ class _MobileHomeState extends State<MobileHome> {
           child: Column(
             children: [
               UserAccountsDrawerHeader(
-                  currentAccountPicture: CircleAvatar(
-                    child: Icon(Icons.person),
-                  ),
-                  accountName: Text("Raunak Kumar"),
-                  accountEmail: Text("raunakk728@gmail.com")),
-              ListTile(
-                title: Text("Share"),
-                leading: Icon(Icons.share),
+                decoration: BoxDecoration(
+                  color: Color(0xff0A192F),
+                ),
+                currentAccountPicture: CircleAvatar(
+                  child: Icon(Icons.person),
+                  backgroundColor: Colors.grey,
+                  foregroundColor: Colors.white,
+                ),
+                accountName: Text("Raunak Kumar"),
+                accountEmail: Text("raunakk728@gmail.com"),
               ),
-              ListTile(
-                leading: Icon(Icons.group),
-                title: Text("About"),
-              ),
+              // ListTile(
+              //   title: Text("Share"),
+              //   leading: Icon(Icons.share),
+              // ),
+              // ListTile(
+              //   leading: Icon(Icons.group),
+              //   title: Text("About"),
+              // ),
               Expanded(
                 child: Text("Version 1.0.1"),
               )
@@ -68,7 +74,7 @@ class _MobileHomeState extends State<MobileHome> {
         elevation: 0.0,
         title: IconButton(
           icon: Icon(
-            Icons.change_history,
+            Icons.adjust_rounded,
             size: 32.0,
             color: Color(0xff64FFDA),
           ),
@@ -108,7 +114,7 @@ class _MobileHomeState extends State<MobileHome> {
                   height: size.height * 0.04,
                 ),
                 CustomText(
-                  text: "I build awesome applications for Android, iOS and the web.",
+                  text: "I build awesome applications for Android, iOS and the Web.",
                   textsize: 42.0,
                   color: Color(0xffCCD6F6).withOpacity(0.6),
                   fontWeight: FontWeight.w700,
@@ -294,36 +300,49 @@ class _MobileHomeState extends State<MobileHome> {
                 //Image
                 Center(
                   child: Container(
-                    height: size.height * 0.6,
-                    width: size.width * 0.7,
+                    height: size.height * 0.8,
+                    width: size.width * 0.6,
                     child: Stack(
                       children: [
                         Positioned(
-                          top: 50,
-                          right: 20,
-                          left: 50.0,
+                          top: 10,
                           child: Card(
                             color: Color(0xff61F9D5),
+                            shape: RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(size.width * 0.8),
+                            ),
                             child: Container(
                               margin: EdgeInsets.all(2.75),
-                              height: size.height * 0.45,
-                              width: size.width * 0.66,
-                              color: Color(0xff0A192F),
+                              height: size.height * 0.52,
+                              width: size.width * 0.52,
+                              decoration: BoxDecoration(
+                                color: Color(0xff0A192F),
+                                borderRadius: BorderRadius.circular(size.width * 0.8),
+                              ),
                             ),
                           ),
                         ),
                         Container(
                           height: size.height * 0.5,
-                          width: size.width * 0.6,
-                          child: Image(
-                            fit: BoxFit.cover,
-                            image: AssetImage("images/pic1.jpeg"),
+                          width: size.width * 0.5,
+                          child: ClipRRect(
+                            borderRadius: BorderRadius.circular(size.width * 0.8),
+                            child: Image(
+                              fit: BoxFit.cover,
+                              image: AssetImage("images/pic1.jpg"),
+                            ),
+                          ),
+                          decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(size.width * 0.8),
                           ),
                         ),
                         Container(
                           height: size.height * 0.5,
-                          width: size.width * 0.6,
-                          color: Color(0xff61F9D5).withOpacity(0.5),
+                          width: size.width * 0.5,
+                          decoration: BoxDecoration(
+                            color: Color(0xff61F9D5).withOpacity(0.2),
+                            borderRadius: BorderRadius.circular(size.width * 0.8),
+                          ),
                         ),
                       ],
                     ),
@@ -399,10 +418,10 @@ class _MobileHomeState extends State<MobileHome> {
                 SizedBox(
                   height: size.height * 0.07,
                 ),
-                //TODO: modify the main home page for my projects
+
                 MobileProject(
                   ontab: () {},
-                  image: "images/pic9.jpg",
+                  image: "images/pic9.png",
                 ),
 
                 SizedBox(
@@ -420,6 +439,15 @@ class _MobileHomeState extends State<MobileHome> {
 
                 MobileProject(
                   ontab: () {},
+                  image: "images/pic4.png",
+                ),
+
+                SizedBox(
+                  height: size.height * 0.07,
+                ),
+
+                MobileProject(
+                  ontab: () {},
                   image: "images/pic3.jpg",
                 ),
 
@@ -429,7 +457,7 @@ class _MobileHomeState extends State<MobileHome> {
 
                 MobileProject(
                   ontab: () {},
-                  image: "images/pic4.jpg",
+                  image: "images/pic5.png",
                 ),
 
                 SizedBox(
@@ -438,7 +466,7 @@ class _MobileHomeState extends State<MobileHome> {
 
                 MobileProject(
                   ontab: () {},
-                  image: "images/pic5.jpg",
+                  image: "images/pic6.png",
                 ),
 
                 SizedBox(
@@ -447,7 +475,7 @@ class _MobileHomeState extends State<MobileHome> {
 
                 MobileProject(
                   ontab: () {},
-                  image: "images/pic6.jpg",
+                  image: "images/pic7.png",
                 ),
 
                 SizedBox(
@@ -456,34 +484,7 @@ class _MobileHomeState extends State<MobileHome> {
 
                 MobileProject(
                   ontab: () {},
-                  image: "images/pic7.jpg",
-                ),
-
-                SizedBox(
-                  height: size.height * 0.07,
-                ),
-
-                MobileProject(
-                  ontab: () {},
-                  image: "images/pic8.jpg",
-                ),
-
-                SizedBox(
-                  height: size.height * 0.07,
-                ),
-
-                MobileProject(
-                  ontab: () {},
-                  image: "images/pic10.jpg",
-                ),
-
-                SizedBox(
-                  height: size.height * 0.07,
-                ),
-
-                MobileProject(
-                  ontab: () {},
-                  image: "images/pic11.jpg",
+                  image: "images/pic8.png",
                 ),
 
                 SizedBox(

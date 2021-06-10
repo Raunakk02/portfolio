@@ -1,14 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:potrtfolio/Model/Method.dart';
-import 'package:potrtfolio/UI/About.dart';
-import 'package:potrtfolio/UI/FeatureProject.dart';
-import 'package:potrtfolio/UI/Work.dart';
-import 'package:potrtfolio/Widget/AppBarTitle.dart';
-import 'package:potrtfolio/Widget/CustomText.dart';
-import 'package:potrtfolio/Widget/MainTiitle.dart';
-import 'package:potrtfolio/Widget/OSImages.dart';
+import 'package:portfolio/Model/Method.dart';
+import 'package:portfolio/UI/About.dart';
+import 'package:portfolio/UI/FeatureProject.dart';
+import 'package:portfolio/UI/Work.dart';
+import 'package:portfolio/Widget/AppBarTitle.dart';
+import 'package:portfolio/Widget/CustomText.dart';
+import 'package:portfolio/Widget/MainTiitle.dart';
 import 'package:scroll_to_index/scroll_to_index.dart';
 
 class HomePage extends StatefulWidget {
@@ -102,13 +101,12 @@ class _HomePageState extends State<HomePage> {
                   children: [
                     IconButton(
                         icon: Icon(
-                          Icons.change_history,
+                          Icons.adjust_rounded,
                           size: 32.0,
                           color: Color(0xff64FFDA),
                         ),
                         onPressed: () {}),
                     Spacer(),
-                    //TODO: modify this main page
                     Expanded(
                       child: Padding(
                         padding: const EdgeInsets.symmetric(horizontal: 8.0),
@@ -132,12 +130,12 @@ class _HomePageState extends State<HomePage> {
                               ),
                               Tab(
                                 child: AppBarTitle(
-                                  text: 'Project',
+                                  text: 'Projects',
                                 ),
                               ),
                               Tab(
                                 child: AppBarTitle(
-                                  text: 'Contact Us',
+                                  text: 'Get In Touch',
                                 ),
                               ),
                             ],
@@ -163,11 +161,10 @@ class _HomePageState extends State<HomePage> {
                             borderRadius: BorderRadius.circular(6.0),
                           ),
                           child: FlatButton(
-                            hoverColor: Color(0xFF3E0449),
+                            hoverColor: Color(0xff0A192F),
                             onPressed: () {
                               method.launchURL(
-                                  //TODO: add resume url
-                                  "");
+                                  "https://drive.google.com/file/d/1ud4eSUOFhJajHgzupaOwBqzzdzHdYztq/view?usp=sharing");
                             },
                             child: Padding(
                               padding: const EdgeInsets.symmetric(
@@ -289,7 +286,7 @@ class _HomePageState extends State<HomePage> {
                                   ),
                                   CustomText(
                                     text:
-                                        "I build awesome applications for Android, iOS and the web.",
+                                        "I build awesome applications for Android, iOS and the Web.",
                                     textsize: 56.0,
                                     color: Color(0xffCCD6F6).withOpacity(0.6),
                                     fontWeight: FontWeight.w700,
@@ -377,14 +374,14 @@ class _HomePageState extends State<HomePage> {
                                         height: size.height * 0.04,
                                       ),
                                       FeatureProject(
-                                        imagePath: "images/pic9.jpg",
+                                        imagePath: "images/pic9.png",
                                         ontab: () {
                                           method.launchURL(
-                                              "https://github.com/champ96k/WhatsApp--UI-Clone");
+                                              "https://github.com/Raunakk02/whatsapp-UI-clone-static");
                                         },
                                         projectDesc:
                                             "A Mobile app for both Android and IOS. View your Status, Chat, and call history. The purpose of this projcet is to Learn Flutter complex UI Design.",
-                                        projectTitle: "WhatsaApp UI Clone",
+                                        projectTitle: "WhatsApp UI Clone",
                                         tech1: "Flutter",
                                         tech2: "Dart",
                                         tech3: "Flutter UI",
@@ -405,114 +402,85 @@ class _HomePageState extends State<HomePage> {
                                       ),
 
                                       FeatureProject(
+                                        imagePath: "images/pic4.png",
+                                        ontab: () {
+                                          method.launchURL("https://github.com/Raunakk02/shop-app");
+                                        },
+                                        projectDesc:
+                                            "An online shop app made using flutter frame work and firebase real-time database as backend. It has user authentication, advanced animations and also auto sign in feature. It works both on android and iOS.",
+                                        projectTitle: "Online Shop App",
+                                        tech1: "Authentication",
+                                        tech2: "Flutter",
+                                        tech3: "Firebase",
+                                      ),
+                                      FeatureProject(
                                         imagePath: "images/pic3.jpg",
                                         ontab: () {
                                           method.launchURL(
                                               "https://github.com/Raunakk02/Othello-flutter");
                                         },
                                         projectDesc:
-                                            "An custom made Othello game supported on web, android and iOS featuring room creation and online chats.",
+                                            "A custom made Othello game supported on web, android and iOS featuring room creation and online chats.",
                                         projectTitle: "Othello League",
                                         tech1: "Flutter",
                                         tech2: "Hive",
                                         tech3: "Firebase",
                                       ),
 
-                                      FeatureProject(
-                                        imagePath: "images/pic4.jpg",
-                                        ontab: () {
-                                          method.launchURL(
-                                              "https://github.com/champ96k/coronavirus-tracker-app");
-                                        },
-                                        projectDesc:
-                                            "A Flutter app to track Coronavirus outbreak, Current statistics of global total confirmed, deaths, recovered cases, Health news, coronavirus safety information and many more.",
-                                        projectTitle: "Covid19 Tracker",
-                                        tech1: "Dart",
-                                        tech2: "Flutter",
-                                        tech3: "API",
-                                      ),
                                       //ff
                                       FeatureProject(
-                                        imagePath: "images/pic5.jpg",
+                                        imagePath: "images/pic5.png",
                                         ontab: () {
-                                          method.launchURL(
-                                              "https://github.com/champ96k/Gender-Predictor-Flutter-App");
+                                          method
+                                              .launchURL("https://github.com/Raunakk02/time_table");
                                         },
                                         projectDesc:
-                                            "In this app you can predict the gender with the help of name and probability of that name.",
-                                        projectTitle: "Gender Predictor",
-                                        tech1: "Dart",
+                                            "This app can be used to schedule timed events such as lectures, meetups, etc. It packs within it features like android alarm manager and flutter notifications to trigger periodic notifications based on the scheduled event.",
+                                        projectTitle: "Time Scheduling App",
+                                        tech1: "Notifications",
                                         tech2: "Flutter",
-                                        tech3: "API",
+                                        tech3: "Native Device Features",
                                       ),
 
                                       FeatureProject(
-                                        imagePath: "images/pic6.jpg",
+                                        imagePath: "images/pic6.png",
                                         ontab: () {
-                                          method.launchURL(
-                                              "https://github.com/champ96k/News-Hours-Apps-Using-Rest-API");
+                                          method
+                                              .launchURL("https://github.com/Raunakk02/meals-app");
                                         },
                                         projectDesc:
-                                            "complete news Application using rest API API link- https://newsapi.org, you can get all news.",
-                                        projectTitle: "News Hour",
+                                            "Basic flutter application implementing features like navigations, tabs and animations in flutter",
+                                        projectTitle: "Meals App",
                                         tech1: "Dart",
                                         tech2: "Flutter",
-                                        tech3: "API",
+                                        tech3: "Navigation",
                                       ),
 
                                       FeatureProject(
-                                        imagePath: "images/pic7.jpg",
+                                        imagePath: "images/pic7.png",
                                         ontab: () {
                                           method.launchURL(
-                                              "https://github.com/champ96k/Flutter-wallpaper-App-using-Firebase");
+                                              "https://github.com/Raunakk02/Personal-Expenses-App");
                                         },
                                         projectDesc:
-                                            "Flutter Wallpaper application using firebase as a backend with a cool animation, it show the all images that are store in firebase firestore.",
-                                        projectTitle: "Wallpaper App",
+                                            "A handy application for storing and monitoring weekly expenses making use of ModalBottomSheet and Object Models in Flutter",
+                                        projectTitle: "Personal Expenses App",
                                         tech1: "Dart",
                                         tech2: "Flutter",
-                                        tech3: "Firebase",
                                       ),
 
                                       FeatureProject(
-                                        imagePath: "images/pic8.jpg",
+                                        imagePath: "images/pic8.png",
                                         ontab: () {
                                           method.launchURL(
-                                              "https://github.com/champ96k/Flutter-Weather-Application");
+                                              "https://github.com/Raunakk02/Flutter-Quiz-App");
                                         },
                                         projectDesc:
-                                            "Weather app. This weather app is one of best free weather apps with full features: Local weather, weather map (weather map service) and weather widgets. Widgets for Android: The weather radar widget free and clock widget weather with beautiful style.",
-                                        projectTitle: "Weather Application",
+                                            "This is a basic personality quiz app made using flutter and dart. The app has been developed only for practice purposes but it does implements most basic dart and flutter features.",
+                                        projectTitle: "Personality Quiz",
                                         tech1: "Dart",
                                         tech2: "Flutter",
-                                        tech3: "API",
-                                      ),
-
-                                      FeatureProject(
-                                        imagePath: "images/pic10.jpg",
-                                        ontab: () {
-                                          method.launchURL(
-                                              "https://pub.dev/packages/flutter_onboarding_screen");
-                                        },
-                                        projectDesc:
-                                            "A flutter package which help developer in creating a onboarding screens of their app.",
-                                        projectTitle: "Flutter Onboarding Screen Package",
-                                        tech1: "Dart",
-                                        tech2: "Flutter",
-                                        tech3: "Dart Package",
-                                      ),
-
-                                      FeatureProject(
-                                        imagePath: "images/pic11.jpg",
-                                        ontab: () {
-                                          method.launchURL(
-                                              "https://github.com/champ96k/Flutter-Neumorphic-Calculator-UI");
-                                        },
-                                        projectDesc: "To explore the flutter Neumorphic design",
-                                        projectTitle: "Neumorphic Design",
-                                        tech1: "Dart",
-                                        tech2: "Flutter",
-                                        tech3: "Flutter UI",
+                                        tech3: "Refactoring",
                                       ),
                                     ],
                                   )),
