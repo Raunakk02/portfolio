@@ -501,7 +501,7 @@ class _MobileHomeState extends State<MobileHome> {
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
                         CustomText(
-                          text: "0.4 What's Next?",
+                          text: "04. What's Next?",
                           textsize: 16.0,
                           color: Color(0xff41FBDA),
                           letterSpacing: 3.0,

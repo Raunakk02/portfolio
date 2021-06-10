@@ -367,7 +367,7 @@ class _HomePageState extends State<HomePage> {
                                   child: Column(
                                     children: [
                                       MainTiitle(
-                                        number: "0.3",
+                                        number: "03.",
                                         text: "Projects I have worked on",
                                       ),
                                       SizedBox(
@@ -502,7 +502,7 @@ class _HomePageState extends State<HomePage> {
                                         mainAxisAlignment: MainAxisAlignment.center,
                                         children: [
                                           CustomText(
-                                            text: "0.4 What's Next?",
+                                            text: "04. What's Next?",
                                             textsize: 16.0,
                                             color: Color(0xff41FBDA),
                                             letterSpacing: 3.0,
