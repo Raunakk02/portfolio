@@ -75,28 +75,23 @@ class _WorkState extends State<Work> {
                             children: [
                               CircleAvatar(
                                 backgroundColor: Colors.pink,
-                                child: FaIcon(FontAwesomeIcons.laptopHouse,
-                                    color: Colors.white),
+                                child: FaIcon(FontAwesomeIcons.book, color: Colors.white),
                               ),
-                              CircleAvatar(
-                                backgroundColor: Colors.red,
-                                child: FaIcon(FontAwesomeIcons.freeCodeCamp,
-                                    color: Colors.white),
-                              ),
+                              // CircleAvatar(
+                              //   backgroundColor: Colors.red,
+                              //   child: FaIcon(FontAwesomeIcons.freeCodeCamp, color: Colors.white),
+                              // ),
                               CircleAvatar(
                                 backgroundColor: Colors.brown,
-                                child: FaIcon(FontAwesomeIcons.laptopCode,
-                                    color: Colors.white),
+                                child: FaIcon(FontAwesomeIcons.laptopCode, color: Colors.white),
                               ),
                               CircleAvatar(
                                 backgroundColor: Colors.deepOrange,
-                                child: FaIcon(FontAwesomeIcons.coffee,
-                                    color: Colors.white),
+                                child: FaIcon(FontAwesomeIcons.building, color: Colors.white),
                               ),
                               CircleAvatar(
                                 backgroundColor: Colors.deepPurple,
-                                child: FaIcon(FontAwesomeIcons.dev,
-                                    color: Colors.white),
+                                child: FaIcon(FontAwesomeIcons.dev, color: Colors.white),
                               ),
                             ],
                           )),

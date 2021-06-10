@@ -48,8 +48,8 @@ class _MobileHomeState extends State<MobileHome> {
                   currentAccountPicture: CircleAvatar(
                     child: Icon(Icons.person),
                   ),
-                  accountName: Text("Tushar Nikam"),
-                  accountEmail: Text("champ96k@gmail.com")),
+                  accountName: Text("Raunak Kumar"),
+                  accountEmail: Text("raunakk728@gmail.com")),
               ListTile(
                 title: Text("Share"),
                 leading: Icon(Icons.share),
@@ -75,776 +75,576 @@ class _MobileHomeState extends State<MobileHome> {
           onPressed: () {},
         ),
       ),
-      body: SingleChildScrollView(
-        child: Padding(
-          padding: const EdgeInsets.symmetric(horizontal: 16.0),
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            mainAxisAlignment: MainAxisAlignment.start,
-            children: [
-              SizedBox(
-                height: size.height * 0.08,
-              ),
-              CustomText(
-                text: "Hi, my name is",
-                textsize: 16.0,
-                color: Color(0xff41FBDA),
-                letterSpacing: 3.0,
-              ),
-              SizedBox(
-                height: size.height * 0.02,
-              ),
-              CustomText(
-                text: "Tushar Nikam.",
-                textsize: 52.0,
-                color: Color(0xffCCD6F6),
-                fontWeight: FontWeight.w900,
-              ),
-              SizedBox(
-                height: size.height * 0.04,
-              ),
-              CustomText(
-                text: "I build things for the Android and web.",
-                textsize: 42.0,
-                color: Color(0xffCCD6F6).withOpacity(0.6),
-                fontWeight: FontWeight.w700,
-              ),
-              SizedBox(
-                height: size.height * 0.04,
-              ),
-              Padding(
-                padding: const EdgeInsets.symmetric(horizontal: 8.0),
-                child: Wrap(
-                  children: [
-                    Text(
-                      "I'm a freelancer based in Nashik, IN specializing in building (and occasionally designing) exceptional websites, applications, and everything in between.",
-                      style: TextStyle(
-                        color: Colors.grey,
-                        fontSize: 15.0,
-                        letterSpacing: 2.75,
-                        wordSpacing: 0.75,
-                      ),
-                    )
-                  ],
+      body: RawScrollbar(
+        isAlwaysShown: true,
+        thickness: 10,
+        radius: Radius.circular(8),
+        child: SingleChildScrollView(
+          child: Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 16.0),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              mainAxisAlignment: MainAxisAlignment.start,
+              children: [
+                SizedBox(
+                  height: size.height * 0.08,
                 ),
-              ),
-              SizedBox(
-                height: size.height * 0.06,
-              ),
-              Card(
-                shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(4.0),
+                CustomText(
+                  text: "Hi, my name is",
+                  textsize: 16.0,
+                  color: Color(0xff41FBDA),
+                  letterSpacing: 3.0,
                 ),
-                color: Color(0xff64FFDA),
-                child: Container(
-                  alignment: Alignment.center,
-                  margin: EdgeInsets.all(0.75),
-                  height: 56.0,
-                  width: 160.0,
-                  decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(4.0),
-                    color: Color(0xff0A192F),
+                SizedBox(
+                  height: size.height * 0.02,
+                ),
+                CustomText(
+                  text: "Raunak Kumar.",
+                  textsize: 52.0,
+                  color: Color(0xffCCD6F6),
+                  fontWeight: FontWeight.w900,
+                ),
+                SizedBox(
+                  height: size.height * 0.04,
+                ),
+                CustomText(
+                  text: "I build awesome applications for Android, iOS and the web.",
+                  textsize: 42.0,
+                  color: Color(0xffCCD6F6).withOpacity(0.6),
+                  fontWeight: FontWeight.w700,
+                ),
+                SizedBox(
+                  height: size.height * 0.04,
+                ),
+                Padding(
+                  padding: const EdgeInsets.symmetric(horizontal: 8.0),
+                  child: Wrap(
+                    children: [
+                      Text(
+                        "I'm a developer based in Odisha, IN specializing in developing highly scalable as well as easily maintainable applications.",
+                        style: TextStyle(
+                          color: Colors.grey,
+                          fontSize: 15.0,
+                          letterSpacing: 2.75,
+                          wordSpacing: 0.75,
+                        ),
+                      )
+                    ],
                   ),
-                  child: MaterialButton(
-                    onPressed: () {
-                      method.launchEmail();
-                    },
-                    hoverColor: Colors.green,
-                    child: Text(
-                      "Get In Touch",
-                      style: TextStyle(
-                        color: Color(0xff64FFDA),
-                        letterSpacing: 2.75,
-                        wordSpacing: 1.0,
-                        fontSize: 15.0,
+                ),
+                SizedBox(
+                  height: size.height * 0.06,
+                ),
+                Card(
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(4.0),
+                  ),
+                  color: Color(0xff64FFDA),
+                  child: Container(
+                    alignment: Alignment.center,
+                    margin: EdgeInsets.all(0.75),
+                    height: 56.0,
+                    width: 160.0,
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(4.0),
+                      color: Color(0xff0A192F),
+                    ),
+                    child: MaterialButton(
+                      onPressed: () {
+                        method.launchEmail();
+                      },
+                      hoverColor: Colors.green,
+                      child: Text(
+                        "Get In Touch",
+                        style: TextStyle(
+                          color: Color(0xff64FFDA),
+                          letterSpacing: 2.75,
+                          wordSpacing: 1.0,
+                          fontSize: 15.0,
+                        ),
                       ),
                     ),
                   ),
                 ),
-              ),
-              SizedBox(
-                height: size.height * 0.08,
-              ),
+                SizedBox(
+                  height: size.height * 0.08,
+                ),
 
-              //About me
-              FittedBox(
-                fit: BoxFit.cover,
-                child: Container(
-                  width: size.width,
-                  //color: Colors.purple,
-                  child: Column(
-                    children: [
-                      //About me title
-                      Row(
-                        crossAxisAlignment: CrossAxisAlignment.center,
-                        children: [
-                          CustomText(
-                            text: "01.",
-                            textsize: 20.0,
-                            color: Color(0xff61F9D5),
-                            fontWeight: FontWeight.w700,
-                          ),
-                          SizedBox(
-                            width: 12.0,
-                          ),
-                          CustomText(
-                            text: "About Me",
-                            textsize: 26.0,
-                            color: Color(0xffCCD6F6),
-                            fontWeight: FontWeight.w700,
-                          ),
-                          SizedBox(
-                            width: MediaQuery.of(context).size.width * 0.01,
-                          ),
-                          Container(
-                            width: size.width / 4,
-                            height: 1.10,
-                            color: Color(0xff303C55),
-                          ),
-                        ],
-                      ),
-
-                      SizedBox(
-                        height: size.height * 0.07,
-                      ),
-
-                      //About me desc
-                      Wrap(
-                        children: [
-                          CustomText(
-                            text:
-                                "Hello! I'm Tushar, a Freelancer based in Nashik, IN.\nI enjoy creating things that live on the internet, whether that be websites, applications, or anything in between. My goal is to always build products that provide pixel-perfect, performant experiences.\n",
-                            textsize: 16.0,
-                            color: Color(0xff828DAA),
-                            fontWeight: FontWeight.w500,
-                            letterSpacing: 0.75,
-                          ),
-                          CustomText(
-                            text:
-                                "Shortly currently, I am purshuing my Bachlor's degree in Computter science and Engineering at University of Pune, as well as doing freelancing where I work on a wide variety of interesting and meaningful projects on a daily basis.\n",
-                            textsize: 16.0,
-                            color: Color(0xff828DAA),
-                            fontWeight: FontWeight.w500,
-                            letterSpacing: 0.75,
-                          ),
-                          CustomText(
-                            text:
-                                "Here are a few technologies I've been working with recently:\n\n",
-                            textsize: 16.0,
-                            color: Color(0xff828DAA),
-                            fontWeight: FontWeight.w500,
-                            letterSpacing: 0.75,
-                          ),
-                        ],
-                      ),
-
-                      SizedBox(
-                        height: size.height * 0.06,
-                      ),
-
-                      Container(
-                        width: size.width,
-                        alignment: Alignment.center,
-                        child: Row(
-                          mainAxisAlignment: MainAxisAlignment.spaceAround,
+                //About me
+                FittedBox(
+                  fit: BoxFit.cover,
+                  child: Container(
+                    width: size.width,
+                    //color: Colors.purple,
+                    child: Column(
+                      children: [
+                        //About me title
+                        Row(
+                          crossAxisAlignment: CrossAxisAlignment.center,
                           children: [
-                            Column(
-                              crossAxisAlignment: CrossAxisAlignment.start,
-                              mainAxisAlignment: MainAxisAlignment.spaceAround,
-                              children: [
-                                technology(context, "Dart"),
-                                technology(context, "Flutter"),
-                                technology(context, "Firebase"),
-                                technology(context, "UI/UX (Adobe XD)"),
-                              ],
+                            CustomText(
+                              text: "01.",
+                              textsize: 20.0,
+                              color: Color(0xff61F9D5),
+                              fontWeight: FontWeight.w700,
                             ),
-                            Column(
-                              crossAxisAlignment: CrossAxisAlignment.start,
-                              mainAxisAlignment: MainAxisAlignment.spaceAround,
-                              children: [
-                                technology(context, "C/C++"),
-                                technology(context, "HTML, & (S)Css"),
-                                technology(context, "MYSQL"),
-                                technology(context, "Java"),
-                              ],
+                            SizedBox(
+                              width: 12.0,
+                            ),
+                            CustomText(
+                              text: "About Me",
+                              textsize: 26.0,
+                              color: Color(0xffCCD6F6),
+                              fontWeight: FontWeight.w700,
+                            ),
+                            SizedBox(
+                              width: MediaQuery.of(context).size.width * 0.01,
+                            ),
+                            Container(
+                              width: size.width / 4,
+                              height: 1.10,
+                              color: Color(0xff303C55),
                             ),
                           ],
                         ),
-                      ),
-                    ],
-                  ),
-                ),
-              ),
 
-              SizedBox(
-                height: size.height * 0.08,
-              ),
-
-              //Image
-              Center(
-                child: Container(
-                  height: size.height * 0.6,
-                  width: size.width * 0.7,
-                  child: Stack(
-                    children: [
-                      Positioned(
-                        top: 50,
-                        right: 20,
-                        left: 50.0,
-                        child: Card(
-                          color: Color(0xff61F9D5),
-                          child: Container(
-                            margin: EdgeInsets.all(2.75),
-                            height: size.height * 0.45,
-                            width: size.width * 0.66,
-                            color: Color(0xff0A192F),
-                          ),
+                        SizedBox(
+                          height: size.height * 0.07,
                         ),
-                      ),
-                      Container(
-                        height: size.height * 0.5,
-                        width: size.width * 0.6,
-                        child: Image(
-                          fit: BoxFit.cover,
-                          image: AssetImage("images/pic1.jpeg"),
-                        ),
-                      ),
-                      Container(
-                        height: size.height * 0.5,
-                        width: size.width * 0.6,
-                        color: Color(0xff61F9D5).withOpacity(0.5),
-                      ),
-                    ],
-                  ),
-                ),
-              ),
 
-              //Where I've Worked title
-              Row(
-                crossAxisAlignment: CrossAxisAlignment.center,
-                children: [
-                  CustomText(
-                    text: "02.",
-                    textsize: 20.0,
-                    color: Color(0xff61F9D5),
-                    fontWeight: FontWeight.w700,
-                  ),
-                  SizedBox(
-                    width: 12.0,
-                  ),
-                  CustomText(
-                    text: "Where I've Worked",
-                    textsize: 26.0,
-                    color: Color(0xffCCD6F6),
-                    fontWeight: FontWeight.w700,
-                  ),
-                  SizedBox(
-                    width: MediaQuery.of(context).size.width * 0.01,
-                  ),
-                  Container(
-                    width: size.width * 0.08,
-                    height: 1.10,
-                    color: Color(0xff303C55),
-                  ),
-                ],
-              ),
-
-              MobileWork(),
-
-              SizedBox(
-                height: size.height * 0.07,
-              ),
-
-              //Some Things I've Built title
-              Row(
-                crossAxisAlignment: CrossAxisAlignment.center,
-                children: [
-                  CustomText(
-                    text: "03.",
-                    textsize: 20.0,
-                    color: Color(0xff61F9D5),
-                    fontWeight: FontWeight.w700,
-                  ),
-                  SizedBox(
-                    width: 12.0,
-                  ),
-                  CustomText(
-                    text: "Some Things I've Built",
-                    textsize: 26.0,
-                    color: Color(0xffCCD6F6),
-                    fontWeight: FontWeight.w700,
-                  ),
-                  SizedBox(
-                    width: MediaQuery.of(context).size.width * 0.01,
-                  ),
-                  Container(
-                    width: size.width * 0.04,
-                    height: 1.10,
-                    color: Color(0xff303C55),
-                  ),
-                ],
-              ),
-
-              SizedBox(
-                height: size.height * 0.07,
-              ),
-
-              MobileProject(
-                ontab: () {},
-                image: "images/pic9.jpg",
-              ),
-
-              SizedBox(
-                height: size.height * 0.07,
-              ),
-
-              MobileProject(
-                ontab: () {},
-                image: "images/pic2.jpg",
-              ),
-
-              SizedBox(
-                height: size.height * 0.07,
-              ),
-
-              MobileProject(
-                ontab: () {},
-                image: "images/pic3.png",
-              ),
-
-              SizedBox(
-                height: size.height * 0.07,
-              ),
-
-              MobileProject(
-                ontab: () {},
-                image: "images/pic4.jpg",
-              ),
-
-              SizedBox(
-                height: size.height * 0.07,
-              ),
-
-              MobileProject(
-                ontab: () {},
-                image: "images/pic5.jpg",
-              ),
-
-              SizedBox(
-                height: size.height * 0.07,
-              ),
-
-              MobileProject(
-                ontab: () {},
-                image: "images/pic6.jpg",
-              ),
-
-              SizedBox(
-                height: size.height * 0.07,
-              ),
-
-              MobileProject(
-                ontab: () {},
-                image: "images/pic7.jpg",
-              ),
-
-              SizedBox(
-                height: size.height * 0.07,
-              ),
-
-              MobileProject(
-                ontab: () {},
-                image: "images/pic8.jpg",
-              ),
-
-              SizedBox(
-                height: size.height * 0.07,
-              ),
-
-              MobileProject(
-                ontab: () {},
-                image: "images/pic10.jpg",
-              ),
-
-              SizedBox(
-                height: size.height * 0.07,
-              ),
-
-              MobileProject(
-                ontab: () {},
-                image: "images/pic11.jpg",
-              ),
-
-              SizedBox(
-                height: size.height * 0.07,
-              ),
-
-              MobileProject(
-                ontab: () {},
-                image: "images/pic102.gif",
-              ),
-
-              SizedBox(
-                height: size.height * 0.07,
-              ),
-
-              MobileProject(
-                ontab: () {},
-                image: "images/pic104.png",
-              ),
-
-              SizedBox(
-                height: size.height * 0.07,
-              ),
-
-              MobileProject(
-                ontab: () {},
-                image: "images/pic105.png",
-              ),
-
-              SizedBox(
-                height: size.height * 0.07,
-              ),
-
-              MobileProject(
-                ontab: () {},
-                image: "images/pic106.png",
-              ),
-
-              SizedBox(
-                height: size.height * 0.07,
-              ),
-
-              MobileProject(
-                ontab: () {},
-                image: "images/pic107.jfif",
-              ),
-
-              SizedBox(
-                height: size.height * 0.07,
-              ),
-
-              MobileProject(
-                ontab: () {},
-                image: "images/pic108.jfif",
-              ),
-
-              SizedBox(
-                height: size.height * 0.07,
-              ),
-
-              MobileProject(
-                ontab: () {},
-                image: "images/pic109.jfif",
-              ),
-
-              SizedBox(
-                height: size.height * 0.07,
-              ),
-
-              MobileProject(
-                ontab: () {},
-                image: "images/pic110.jfif",
-              ),
-
-              SizedBox(
-                height: size.height * 0.07,
-              ),
-
-              Row(
-                children: [
-                  Container(
-                    width: size.width * 0.42,
-                    height: size.height * 0.6,
-                    child: Image(
-                      image: AssetImage("images/pic101.png"),
-                    ),
-                  ),
-                  Spacer(),
-                  Container(
-                    width: size.width * 0.42,
-                    height: size.height * 0.6,
-                    child: Image(
-                      image: AssetImage("images/pic103.png"),
-                    ),
-                  ),
-                ],
-              ),
-
-              SizedBox(
-                height: size.height * 0.07,
-              ),
-
-              Row(
-                children: [
-                  Container(
-                    width: size.width * 0.44,
-                    height: size.height * 0.6,
-                    child: Image(
-                      image: AssetImage("images/pic111.gif"),
-                    ),
-                  ),
-                  Spacer(),
-                  Container(
-                    width: size.width * 0.44,
-                    height: size.height * 0.6,
-                    child: Image(
-                      image: AssetImage("images/pic113.jfif"),
-                    ),
-                  ),
-                ],
-              ),
-
-              SizedBox(
-                height: size.height * 0.07,
-              ),
-
-              Row(
-                children: [
-                  Container(
-                    width: size.width * 0.44,
-                    height: size.height * 0.6,
-                    child: Image(
-                      image: AssetImage("images/pic114.png"),
-                    ),
-                  ),
-                  Spacer(),
-                  Container(
-                    width: size.width * 0.44,
-                    height: size.height * 0.6,
-                    child: Image(
-                      image: AssetImage("images/pic115.png"),
-                    ),
-                  ),
-                ],
-              ),
-
-              SizedBox(
-                height: size.height * 0.07,
-              ),
-
-              Row(
-                children: [
-                  Container(
-                    width: size.width * 0.44,
-                    height: size.height * 0.6,
-                    child: Image(
-                      image: AssetImage("images/pic116.jfif"),
-                    ),
-                  ),
-                  Spacer(),
-                  Container(
-                    width: size.width * 0.44,
-                    height: size.height * 0.6,
-                    child: Image(
-                      image: AssetImage("images/pic117.png"),
-                    ),
-                  ),
-                ],
-              ),
-
-              SizedBox(
-                height: size.height * 0.07,
-              ),
-
-              Row(
-                children: [
-                  Container(
-                    width: size.width * 0.44,
-                    height: size.height * 0.6,
-                    child: Image(
-                      image: AssetImage("images/pic118.jpeg"),
-                    ),
-                  ),
-                  Spacer(),
-                  Container(
-                    width: size.width * 0.44,
-                    height: size.height * 0.6,
-                    child: Image(
-                      image: AssetImage("images/pic119.jpeg"),
-                    ),
-                  ),
-                ],
-              ),
-
-              SizedBox(
-                height: size.height * 0.07,
-              ),
-
-              Row(
-                children: [
-                  Container(
-                    width: size.width * 0.44,
-                    height: size.height * 0.6,
-                    child: Image(
-                      image: AssetImage("images/pic120.png"),
-                    ),
-                  ),
-                  Spacer(),
-                  Container(
-                    width: size.width * 0.44,
-                    height: size.height * 0.6,
-                    child: Image(
-                      image: AssetImage("images/pic121.png"),
-                    ),
-                  ),
-                ],
-              ),
-
-              SizedBox(
-                height: size.height * 0.07,
-              ),
-
-              FittedBox(
-                fit: BoxFit.cover,
-                child: Container(
-                  //height: size.aspectRatio,
-                  width: size.width,
-                  alignment: Alignment.center,
-                  child: Column(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: [
-                      CustomText(
-                        text: "0.4 What's Next?",
-                        textsize: 16.0,
-                        color: Color(0xff41FBDA),
-                        letterSpacing: 3.0,
-                      ),
-                      SizedBox(
-                        height: 16.0,
-                      ),
-                      CustomText(
-                        text: "Get In Touch",
-                        textsize: 42.0,
-                        color: Colors.white,
-                        letterSpacing: 3.0,
-                        fontWeight: FontWeight.w700,
-                      ),
-                      SizedBox(
-                        height: size.height * 0.04,
-                      ),
-                      Wrap(
-                        alignment: WrapAlignment.center,
-                        children: [
-                          Text(
-                            "Although I'm currently looking for SDE-1 opportunities, my inbox is always open. Whether you have a question or just want to say hi, I'll try my best to get back to you!",
-                            textAlign: TextAlign.center,
-                            style: TextStyle(
-                              color: Colors.white.withOpacity(0.4),
+                        //About me desc
+                        Wrap(
+                          children: [
+                            CustomText(
+                              text:
+                                  "Hello! I'm Raunak, a developer and an enthusiast who loves to explore new tools and technologies as much as possible.\nI enjoy creating real world applications which are pixel-perfect and highly performant.\n",
+                              textsize: 16.0,
+                              color: Color(0xff828DAA),
+                              fontWeight: FontWeight.w500,
                               letterSpacing: 0.75,
-                              fontSize: 16.0,
                             ),
-                          ),
-                        ],
-                      ),
-                      SizedBox(
-                        height: size.height * 0.07,
-                      ),
-                      Card(
-                        elevation: 4.0,
-                        color: Color(0xff64FFDA),
-                        shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(6.0),
+                            CustomText(
+                              text:
+                                  "Currently, I am pursuing my Bachelor's degree in Computer Science and Engineering at Atal Bihari Vajpayee Indian Institute of Information Technology and Management, Gwalior, as well as developing interesting and meaningful projects on a regular basis.\n",
+                              textsize: 16.0,
+                              color: Color(0xff828DAA),
+                              fontWeight: FontWeight.w500,
+                              letterSpacing: 0.75,
+                            ),
+                            CustomText(
+                              text:
+                                  "Here are a few technologies I've been working with recently:\n\n",
+                              textsize: 16.0,
+                              color: Color(0xff828DAA),
+                              fontWeight: FontWeight.w500,
+                              letterSpacing: 0.75,
+                            ),
+                          ],
                         ),
-                        child: Container(
-                          margin: EdgeInsets.all(0.85),
-                          height: size.height * 0.10,
-                          width: size.width * 0.30,
+
+                        SizedBox(
+                          height: size.height * 0.06,
+                        ),
+                        Container(
+                          width: size.width,
                           alignment: Alignment.center,
-                          decoration: BoxDecoration(
-                            color: Color(0xff0A192F),
-                            borderRadius: BorderRadius.circular(6.0),
+                          child: Row(
+                            mainAxisAlignment: MainAxisAlignment.spaceAround,
+                            children: [
+                              Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                mainAxisAlignment: MainAxisAlignment.spaceAround,
+                                children: [
+                                  technology(context, "Dart"),
+                                  technology(context, "Flutter"),
+                                  technology(context, "Firebase"),
+                                  technology(context, "Git"),
+                                  technology(context, "Github"),
+                                  technology(context, "C/C++"),
+                                  technology(context, "HTML"),
+                                  technology(context, "CSS"),
+                                ],
+                              ),
+                              Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                mainAxisAlignment: MainAxisAlignment.spaceAround,
+                                children: [
+                                  technology(context, "MYSQL"),
+                                  technology(context, "NoSQL"),
+                                  technology(context, "JavaScript"),
+                                  technology(context, "Google Colaboratory"),
+                                  technology(context, "After Effects"),
+                                  technology(context, "Photoshop"),
+                                  technology(context, "Premiere Pro"),
+                                  technology(context, "Python"),
+                                ],
+                              ),
+                            ],
                           ),
-                          child: Padding(
-                            padding: const EdgeInsets.symmetric(
-                              horizontal: 8.0,
+                        ),
+                      ],
+                    ),
+                  ),
+                ),
+
+                SizedBox(
+                  height: size.height * 0.08,
+                ),
+
+                //Image
+                Center(
+                  child: Container(
+                    height: size.height * 0.6,
+                    width: size.width * 0.7,
+                    child: Stack(
+                      children: [
+                        Positioned(
+                          top: 50,
+                          right: 20,
+                          left: 50.0,
+                          child: Card(
+                            color: Color(0xff61F9D5),
+                            child: Container(
+                              margin: EdgeInsets.all(2.75),
+                              height: size.height * 0.45,
+                              width: size.width * 0.66,
+                              color: Color(0xff0A192F),
                             ),
-                            child: Text(
-                              "Say Hello",
+                          ),
+                        ),
+                        Container(
+                          height: size.height * 0.5,
+                          width: size.width * 0.6,
+                          child: Image(
+                            fit: BoxFit.cover,
+                            image: AssetImage("images/pic1.jpeg"),
+                          ),
+                        ),
+                        Container(
+                          height: size.height * 0.5,
+                          width: size.width * 0.6,
+                          color: Color(0xff61F9D5).withOpacity(0.5),
+                        ),
+                      ],
+                    ),
+                  ),
+                ),
+
+                //Where I've Worked title
+                Row(
+                  crossAxisAlignment: CrossAxisAlignment.center,
+                  children: [
+                    CustomText(
+                      text: "02.",
+                      textsize: 20.0,
+                      color: Color(0xff61F9D5),
+                      fontWeight: FontWeight.w700,
+                    ),
+                    SizedBox(
+                      width: 12.0,
+                    ),
+                    CustomText(
+                      text: "Where I've Worked",
+                      textsize: 26.0,
+                      color: Color(0xffCCD6F6),
+                      fontWeight: FontWeight.w700,
+                    ),
+                    SizedBox(
+                      width: MediaQuery.of(context).size.width * 0.01,
+                    ),
+                    Container(
+                      width: size.width * 0.08,
+                      height: 1.10,
+                      color: Color(0xff303C55),
+                    ),
+                  ],
+                ),
+
+                MobileWork(),
+
+                SizedBox(
+                  height: size.height * 0.07,
+                ),
+
+                //Some Things I've Built title
+                Row(
+                  crossAxisAlignment: CrossAxisAlignment.center,
+                  children: [
+                    CustomText(
+                      text: "03.",
+                      textsize: 20.0,
+                      color: Color(0xff61F9D5),
+                      fontWeight: FontWeight.w700,
+                    ),
+                    SizedBox(
+                      width: 12.0,
+                    ),
+                    CustomText(
+                      text: "Projects I have worked on",
+                      textsize: 26.0,
+                      color: Color(0xffCCD6F6),
+                      fontWeight: FontWeight.w700,
+                    ),
+                    SizedBox(
+                      width: MediaQuery.of(context).size.width * 0.01,
+                    ),
+                    Container(
+                      width: size.width * 0.04,
+                      height: 1.10,
+                      color: Color(0xff303C55),
+                    ),
+                  ],
+                ),
+
+                SizedBox(
+                  height: size.height * 0.07,
+                ),
+                //TODO: modify the main home page for my projects
+                MobileProject(
+                  ontab: () {},
+                  image: "images/pic9.jpg",
+                ),
+
+                SizedBox(
+                  height: size.height * 0.07,
+                ),
+
+                MobileProject(
+                  ontab: () {},
+                  image: "images/pic2.png",
+                ),
+
+                SizedBox(
+                  height: size.height * 0.07,
+                ),
+
+                MobileProject(
+                  ontab: () {},
+                  image: "images/pic3.jpg",
+                ),
+
+                SizedBox(
+                  height: size.height * 0.07,
+                ),
+
+                MobileProject(
+                  ontab: () {},
+                  image: "images/pic4.jpg",
+                ),
+
+                SizedBox(
+                  height: size.height * 0.07,
+                ),
+
+                MobileProject(
+                  ontab: () {},
+                  image: "images/pic5.jpg",
+                ),
+
+                SizedBox(
+                  height: size.height * 0.07,
+                ),
+
+                MobileProject(
+                  ontab: () {},
+                  image: "images/pic6.jpg",
+                ),
+
+                SizedBox(
+                  height: size.height * 0.07,
+                ),
+
+                MobileProject(
+                  ontab: () {},
+                  image: "images/pic7.jpg",
+                ),
+
+                SizedBox(
+                  height: size.height * 0.07,
+                ),
+
+                MobileProject(
+                  ontab: () {},
+                  image: "images/pic8.jpg",
+                ),
+
+                SizedBox(
+                  height: size.height * 0.07,
+                ),
+
+                MobileProject(
+                  ontab: () {},
+                  image: "images/pic10.jpg",
+                ),
+
+                SizedBox(
+                  height: size.height * 0.07,
+                ),
+
+                MobileProject(
+                  ontab: () {},
+                  image: "images/pic11.jpg",
+                ),
+
+                SizedBox(
+                  height: size.height * 0.07,
+                ),
+
+                FittedBox(
+                  fit: BoxFit.cover,
+                  child: Container(
+                    //height: size.aspectRatio,
+                    width: size.width,
+                    alignment: Alignment.center,
+                    child: Column(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        CustomText(
+                          text: "0.4 What's Next?",
+                          textsize: 16.0,
+                          color: Color(0xff41FBDA),
+                          letterSpacing: 3.0,
+                        ),
+                        SizedBox(
+                          height: 16.0,
+                        ),
+                        CustomText(
+                          text: "Get In Touch",
+                          textsize: 42.0,
+                          color: Colors.white,
+                          letterSpacing: 3.0,
+                          fontWeight: FontWeight.w700,
+                        ),
+                        SizedBox(
+                          height: size.height * 0.04,
+                        ),
+                        Wrap(
+                          alignment: WrapAlignment.center,
+                          children: [
+                            Text(
+                              "My inbox is always open, whether you have a question or just want to say hi, I'll try my best to get back to you!",
+                              textAlign: TextAlign.center,
                               style: TextStyle(
-                                color: Color(0xff64FFDA),
+                                color: Colors.white.withOpacity(0.4),
+                                letterSpacing: 0.75,
+                                fontSize: 16.0,
+                              ),
+                            ),
+                          ],
+                        ),
+                        SizedBox(
+                          height: size.height * 0.07,
+                        ),
+                        InkWell(
+                          onTap: () {
+                            method.launchEmail();
+                          },
+                          child: Card(
+                            elevation: 4.0,
+                            color: Color(0xff64FFDA),
+                            shape: RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(6.0),
+                            ),
+                            child: Container(
+                              margin: EdgeInsets.all(0.85),
+                              height: size.height * 0.09,
+                              width: size.width * 0.10,
+                              alignment: Alignment.center,
+                              decoration: BoxDecoration(
+                                color: Color(0xff0A192F),
+                                borderRadius: BorderRadius.circular(6.0),
+                              ),
+                              child: Padding(
+                                padding: const EdgeInsets.symmetric(
+                                  horizontal: 8.0,
+                                ),
+                                child: Text(
+                                  "Say Hello",
+                                  style: TextStyle(
+                                    color: Color(0xff64FFDA),
+                                  ),
+                                ),
                               ),
                             ),
                           ),
                         ),
+                      ],
+                    ),
+                  ),
+                ),
+
+                SizedBox(
+                  height: size.height * 0.07,
+                ),
+
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceAround,
+                  children: [
+                    IconButton(
+                      icon: Icon(
+                        FontAwesomeIcons.github,
+                        color: Colors.white,
+                        size: 40.0,
                       ),
-                    ],
+                      onPressed: () {
+                        method.launchURL("https://github.com/Raunakk02");
+                      },
+                    ),
+                    IconButton(
+                      icon: Icon(
+                        FontAwesomeIcons.linkedin,
+                        color: Colors.white,
+                        size: 40.0,
+                      ),
+                      onPressed: () {
+                        method.launchURL("https://www.linkedin.com/in/raunak-kumar-8a4397194/");
+                      },
+                    ),
+                    // IconButton(
+                    //   icon: Icon(
+                    //     FontAwesomeIcons.twitter,
+                    //     color: Colors.white,
+                    //     size: 15.0,
+                    //   ),
+                    //   onPressed: () {
+                    //     method.launchURL("https://twitter.com/");
+                    //   },
+                    // ),
+                    IconButton(
+                      icon: Icon(
+                        Icons.mail,
+                        color: Colors.white,
+                        size: 40.0,
+                      ),
+                      onPressed: () {
+                        method.launchEmail();
+                      },
+                    )
+                  ],
+                ),
+
+                SizedBox(
+                  height: size.height * 0.07,
+                ),
+
+                //Footer
+                Container(
+                  alignment: Alignment.center,
+                  height: MediaQuery.of(context).size.height / 6,
+                  width: MediaQuery.of(context).size.width,
+                  //color: Colors.white,
+                  child: Text(
+                    "Designed & Built by Raunak 💙 Flutter",
+                    textAlign: TextAlign.center,
+                    style: TextStyle(
+                      color: Colors.white.withOpacity(0.4),
+                      letterSpacing: 1.75,
+                      fontSize: 14.0,
+                    ),
                   ),
                 ),
-              ),
-
-              SizedBox(
-                height: size.height * 0.07,
-              ),
-
-              Row(
-                mainAxisAlignment: MainAxisAlignment.spaceAround,
-                children: [
-                  IconButton(
-                    icon: Icon(
-                      FontAwesomeIcons.github,
-                      color: Colors.white,
-                      size: 15.0,
-                    ),
-                    onPressed: () {
-                      method.launchURL("https://github.com/champ96k");
-                    },
-                  ),
-                  IconButton(
-                    icon: Icon(
-                      FontAwesomeIcons.linkedin,
-                      color: Colors.white,
-                      size: 15.0,
-                    ),
-                    onPressed: () {
-                      method.launchURL(
-                          "https://www.linkedin.com/in/tushar-nikam-a29a97131/");
-                    },
-                  ),
-                  IconButton(
-                    icon: Icon(
-                      FontAwesomeIcons.twitter,
-                      color: Colors.white,
-                      size: 15.0,
-                    ),
-                    onPressed: () {
-                      method.launchURL("https://twitter.com/champ_96k");
-                    },
-                  ),
-                  IconButton(
-                    icon: Icon(
-                      Icons.mail,
-                      color: Colors.white,
-                      size: 15.0,
-                    ),
-                    onPressed: () {
-                      method.launchEmail();
-                    },
-                  )
-                ],
-              ),
-
-              SizedBox(
-                height: size.height * 0.07,
-              ),
-
-              //Footer
-              Container(
-                alignment: Alignment.center,
-                height: MediaQuery.of(context).size.height / 6,
-                width: MediaQuery.of(context).size.width,
-                //color: Colors.white,
-                child: Text(
-                  "Designed & Built by Tushar Nikam 💙 Flutter",
-                  textAlign: TextAlign.center,
-                  style: TextStyle(
-                    color: Colors.white.withOpacity(0.4),
-                    letterSpacing: 1.75,
-                    fontSize: 14.0,
-                  ),
-                ),
-              ),
-            ],
+              ],
+            ),
           ),
         ),
       ),

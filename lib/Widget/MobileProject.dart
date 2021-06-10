@@ -14,10 +14,10 @@ class MobileProject extends StatelessWidget {
         child: Container(
           height: MediaQuery.of(context).size.height * 0.36,
           width: MediaQuery.of(context).size.width * 0.8,
-         child: Image(
-           fit: BoxFit.fill,
-           image: AssetImage(image),
-         ),
+          child: Image(
+            fit: BoxFit.cover,
+            image: AssetImage(image),
+          ),
         ),
       ),
     );

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:potrtfolio/Widget/MobileWorkBox.dart';
 
 class MobileWork extends StatefulWidget {
   @override
@@ -45,28 +46,23 @@ class _MobileWorkState extends State<MobileWork> {
                             children: [
                               CircleAvatar(
                                 backgroundColor: Colors.pink,
-                                child: FaIcon(FontAwesomeIcons.laptopHouse,
-                                    color: Colors.white),
+                                child: FaIcon(FontAwesomeIcons.book, color: Colors.white),
                               ),
-                              CircleAvatar(
-                                backgroundColor: Colors.red,
-                                child: FaIcon(FontAwesomeIcons.freeCodeCamp,
-                                    color: Colors.white),
-                              ),
+                              // CircleAvatar(
+                              //   backgroundColor: Colors.red,
+                              //   child: FaIcon(FontAwesomeIcons.freeCodeCamp, color: Colors.white),
+                              // ),
                               CircleAvatar(
                                 backgroundColor: Colors.brown,
-                                child: FaIcon(FontAwesomeIcons.laptopCode,
-                                    color: Colors.white),
+                                child: FaIcon(FontAwesomeIcons.laptopCode, color: Colors.white),
                               ),
                               CircleAvatar(
                                 backgroundColor: Colors.deepOrange,
-                                child: FaIcon(FontAwesomeIcons.coffee,
-                                    color: Colors.white),
+                                child: FaIcon(FontAwesomeIcons.building, color: Colors.white),
                               ),
                               CircleAvatar(
                                 backgroundColor: Colors.deepPurple,
-                                child: FaIcon(FontAwesomeIcons.dev,
-                                    color: Colors.white),
+                                child: FaIcon(FontAwesomeIcons.dev, color: Colors.white),
                               ),
                             ],
                           )),
@@ -77,8 +73,8 @@ class _MobileWorkState extends State<MobileWork> {
               Expanded(
                   flex: 4,
                   child: Container(
-                    height: size.height * 1.7,
-                    child: MobileWork(),
+                    height: size.height * 1.2,
+                    child: MobileWorkBox(),
                   ))
             ],
           )
