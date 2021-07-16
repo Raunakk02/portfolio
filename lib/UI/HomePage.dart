@@ -387,8 +387,7 @@ class _HomePageState extends State<HomePage> {
                                         },
                                         projectDesc:
                                             "MASER stands for Mentoring Application with Sentiments and Emotion Recognition. It allows users to share their motivational stories and get guidance/mentorship from other users. It supports one-to-one chats and also includes the feature of sentiment analysis.",
-                                        projectTitle:
-                                            "Food Delivery application",
+                                        projectTitle: "MASER",
                                         tech1: "Flutter",
                                         tech2: "TensorFlow Lite",
                                         tech3: "TDD",
