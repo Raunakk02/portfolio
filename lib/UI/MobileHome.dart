@@ -114,7 +114,8 @@ class _MobileHomeState extends State<MobileHome> {
                   height: size.height * 0.04,
                 ),
                 CustomText(
-                  text: "I build awesome applications for Android, iOS and the Web.",
+                  text:
+                      "I build awesome applications for Android, iOS and the Web.",
                   textsize: 42.0,
                   color: Color(0xffCCD6F6).withOpacity(0.6),
                   fontWeight: FontWeight.w700,
@@ -259,7 +260,8 @@ class _MobileHomeState extends State<MobileHome> {
                             children: [
                               Column(
                                 crossAxisAlignment: CrossAxisAlignment.start,
-                                mainAxisAlignment: MainAxisAlignment.spaceAround,
+                                mainAxisAlignment:
+                                    MainAxisAlignment.spaceAround,
                                 children: [
                                   technology(context, "Dart"),
                                   technology(context, "Flutter"),
@@ -273,7 +275,8 @@ class _MobileHomeState extends State<MobileHome> {
                               ),
                               Column(
                                 crossAxisAlignment: CrossAxisAlignment.start,
-                                mainAxisAlignment: MainAxisAlignment.spaceAround,
+                                mainAxisAlignment:
+                                    MainAxisAlignment.spaceAround,
                                 children: [
                                   technology(context, "MYSQL"),
                                   technology(context, "NoSQL"),
@@ -309,7 +312,8 @@ class _MobileHomeState extends State<MobileHome> {
                           child: Card(
                             color: Color(0xff61F9D5),
                             shape: RoundedRectangleBorder(
-                              borderRadius: BorderRadius.circular(size.width * 0.8),
+                              borderRadius:
+                                  BorderRadius.circular(size.width * 0.8),
                             ),
                             child: Container(
                               margin: EdgeInsets.all(2.75),
@@ -317,7 +321,8 @@ class _MobileHomeState extends State<MobileHome> {
                               width: size.width * 0.52,
                               decoration: BoxDecoration(
                                 color: Color(0xff0A192F),
-                                borderRadius: BorderRadius.circular(size.width * 0.8),
+                                borderRadius:
+                                    BorderRadius.circular(size.width * 0.8),
                               ),
                             ),
                           ),
@@ -326,14 +331,16 @@ class _MobileHomeState extends State<MobileHome> {
                           height: size.height * 0.5,
                           width: size.width * 0.5,
                           child: ClipRRect(
-                            borderRadius: BorderRadius.circular(size.width * 0.8),
+                            borderRadius:
+                                BorderRadius.circular(size.width * 0.8),
                             child: Image(
                               fit: BoxFit.cover,
                               image: AssetImage("images/pic1.jpg"),
                             ),
                           ),
                           decoration: BoxDecoration(
-                            borderRadius: BorderRadius.circular(size.width * 0.8),
+                            borderRadius:
+                                BorderRadius.circular(size.width * 0.8),
                           ),
                         ),
                         Container(
@@ -341,7 +348,8 @@ class _MobileHomeState extends State<MobileHome> {
                           width: size.width * 0.5,
                           decoration: BoxDecoration(
                             color: Color(0xff61F9D5).withOpacity(0.2),
-                            borderRadius: BorderRadius.circular(size.width * 0.8),
+                            borderRadius:
+                                BorderRadius.circular(size.width * 0.8),
                           ),
                         ),
                       ],
@@ -421,7 +429,7 @@ class _MobileHomeState extends State<MobileHome> {
 
                 MobileProject(
                   ontab: () {},
-                  image: "images/pic9.png",
+                  image: "images/pic10.png",
                 ),
 
                 SizedBox(
@@ -431,6 +439,15 @@ class _MobileHomeState extends State<MobileHome> {
                 MobileProject(
                   ontab: () {},
                   image: "images/pic2.png",
+                ),
+
+                SizedBox(
+                  height: size.height * 0.07,
+                ),
+
+                MobileProject(
+                  ontab: () {},
+                  image: "images/pic9.png",
                 ),
 
                 SizedBox(
@@ -598,7 +615,8 @@ class _MobileHomeState extends State<MobileHome> {
                         size: 40.0,
                       ),
                       onPressed: () {
-                        method.launchURL("https://www.linkedin.com/in/raunak-kumar-8a4397194/");
+                        method.launchURL(
+                            "https://www.linkedin.com/in/raunak-kumar-8a4397194/");
                       },
                     ),
                     // IconButton(

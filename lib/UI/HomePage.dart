@@ -37,7 +37,8 @@ class _HomePageState extends State<HomePage> {
   @override
   void initState() {
     _autoScrollController = AutoScrollController(
-      viewportBoundaryGetter: () => Rect.fromLTRB(0, 0, 0, MediaQuery.of(context).padding.bottom),
+      viewportBoundaryGetter: () =>
+          Rect.fromLTRB(0, 0, 0, MediaQuery.of(context).padding.bottom),
       axis: scrollDirection,
     )..addListener(listenerFunc);
     super.initState();
@@ -60,7 +61,8 @@ class _HomePageState extends State<HomePage> {
   }
 
   Future _scrollToIndex(int index) async {
-    await _autoScrollController.scrollToIndex(index, preferPosition: AutoScrollPosition.begin);
+    await _autoScrollController.scrollToIndex(index,
+        preferPosition: AutoScrollPosition.begin);
     _autoScrollController.highlight(index);
   }
 
@@ -216,7 +218,8 @@ class _HomePageState extends State<HomePage> {
                         icon: FaIcon(FontAwesomeIcons.linkedin),
                         color: Color(0xffffA8B2D1),
                         onPressed: () {
-                          method.launchURL("https://www.linkedin.com/in/raunak-kumar-8a4397194/");
+                          method.launchURL(
+                              "https://www.linkedin.com/in/raunak-kumar-8a4397194/");
                         },
                         iconSize: 16.0,
                       ),
@@ -316,7 +319,8 @@ class _HomePageState extends State<HomePage> {
                                     onTap: () {
                                       method.launchEmail();
                                     },
-                                    hoverColor: Color(0xff64FFDA).withOpacity(0.2),
+                                    hoverColor:
+                                        Color(0xff64FFDA).withOpacity(0.2),
                                     borderRadius: BorderRadius.circular(4.0),
                                     child: Container(
                                       alignment: Alignment.center,
@@ -326,7 +330,8 @@ class _HomePageState extends State<HomePage> {
                                         border: Border.all(
                                           color: Color(0xff64FFDA),
                                         ),
-                                        borderRadius: BorderRadius.circular(4.0),
+                                        borderRadius:
+                                            BorderRadius.circular(4.0),
                                       ),
                                       child: Text(
                                         "Get In Touch",
@@ -373,6 +378,36 @@ class _HomePageState extends State<HomePage> {
                                       SizedBox(
                                         height: size.height * 0.04,
                                       ),
+
+                                      FeatureProject(
+                                        imagePath: "images/pic10.png",
+                                        ontab: () {
+                                          method.launchURL(
+                                              "https://github.com/Raunakk02/maser");
+                                        },
+                                        projectDesc:
+                                            "MASER stands for Mentoring Application with Sentiments and Emotion Recognition. It allows users to share their motivational stories and get guidance/mentorship from other users. It supports one-to-one chats and also includes the feature of sentiment analysis.",
+                                        projectTitle:
+                                            "Food Delivery application",
+                                        tech1: "Flutter",
+                                        tech2: "TensorFlow Lite",
+                                        tech3: "TDD",
+                                      ),
+
+                                      FeatureProject(
+                                        imagePath: "images/pic2.png",
+                                        ontab: () {
+                                          method.launchURL(
+                                              "https://github.com/Raunakk02/FoodDeliveryApp");
+                                        },
+                                        projectDesc:
+                                            "A Food Delivery application using Flutter, MobX for state management, use of MVVM architecture, and Hive for offline database.",
+                                        projectTitle:
+                                            "Food Delivery application",
+                                        tech1: "Flutter",
+                                        tech2: "Mobx",
+                                        tech3: "Hive",
+                                      ),
                                       FeatureProject(
                                         imagePath: "images/pic9.png",
                                         ontab: () {
@@ -388,23 +423,10 @@ class _HomePageState extends State<HomePage> {
                                       ),
 
                                       FeatureProject(
-                                        imagePath: "images/pic2.png",
-                                        ontab: () {
-                                          method.launchURL(
-                                              "https://github.com/Raunakk02/FoodDeliveryApp");
-                                        },
-                                        projectDesc:
-                                            "A Food Delivery application using Flutter, MobX for state management, use of MVVM architecture, and Hive for offline database.",
-                                        projectTitle: "Food Delivery application",
-                                        tech1: "Flutter",
-                                        tech2: "Mobx",
-                                        tech3: "Hive",
-                                      ),
-
-                                      FeatureProject(
                                         imagePath: "images/pic4.png",
                                         ontab: () {
-                                          method.launchURL("https://github.com/Raunakk02/shop-app");
+                                          method.launchURL(
+                                              "https://github.com/Raunakk02/shop-app");
                                         },
                                         projectDesc:
                                             "An online shop app made using flutter frame work and firebase real-time database as backend. It has user authentication, advanced animations and also auto sign in feature. It works both on android and iOS.",
@@ -431,8 +453,8 @@ class _HomePageState extends State<HomePage> {
                                       FeatureProject(
                                         imagePath: "images/pic5.png",
                                         ontab: () {
-                                          method
-                                              .launchURL("https://github.com/Raunakk02/time_table");
+                                          method.launchURL(
+                                              "https://github.com/Raunakk02/time_table");
                                         },
                                         projectDesc:
                                             "This app can be used to schedule timed events such as lectures, meetups, etc. It packs within it features like android alarm manager and flutter notifications to trigger periodic notifications based on the scheduled event.",
@@ -445,8 +467,8 @@ class _HomePageState extends State<HomePage> {
                                       FeatureProject(
                                         imagePath: "images/pic6.png",
                                         ontab: () {
-                                          method
-                                              .launchURL("https://github.com/Raunakk02/meals-app");
+                                          method.launchURL(
+                                              "https://github.com/Raunakk02/meals-app");
                                         },
                                         projectDesc:
                                             "Basic flutter application implementing features like navigations, tabs and animations in flutter",
@@ -496,10 +518,12 @@ class _HomePageState extends State<HomePage> {
                                   children: [
                                     Container(
                                       height: size.height * 0.68,
-                                      width: MediaQuery.of(context).size.width - 100,
+                                      width: MediaQuery.of(context).size.width -
+                                          100,
                                       // color: Colors.orange,
                                       child: Column(
-                                        mainAxisAlignment: MainAxisAlignment.center,
+                                        mainAxisAlignment:
+                                            MainAxisAlignment.center,
                                         children: [
                                           CustomText(
                                             text: "04. What's Next?",
@@ -526,7 +550,8 @@ class _HomePageState extends State<HomePage> {
                                                 "My inbox is always open, whether you have a question or just want to say hi, I'll try my \nbest to get back to you!",
                                                 textAlign: TextAlign.center,
                                                 style: TextStyle(
-                                                  color: Colors.white.withOpacity(0.4),
+                                                  color: Colors.white
+                                                      .withOpacity(0.4),
                                                   letterSpacing: 0.75,
                                                   fontSize: 17.0,
                                                 ),
@@ -544,7 +569,8 @@ class _HomePageState extends State<HomePage> {
                                               elevation: 4.0,
                                               color: Color(0xff64FFDA),
                                               shape: RoundedRectangleBorder(
-                                                borderRadius: BorderRadius.circular(6.0),
+                                                borderRadius:
+                                                    BorderRadius.circular(6.0),
                                               ),
                                               child: Container(
                                                 margin: EdgeInsets.all(0.85),
@@ -553,10 +579,13 @@ class _HomePageState extends State<HomePage> {
                                                 alignment: Alignment.center,
                                                 decoration: BoxDecoration(
                                                   color: Color(0xff0A192F),
-                                                  borderRadius: BorderRadius.circular(6.0),
+                                                  borderRadius:
+                                                      BorderRadius.circular(
+                                                          6.0),
                                                 ),
                                                 child: Padding(
-                                                  padding: const EdgeInsets.symmetric(
+                                                  padding: const EdgeInsets
+                                                      .symmetric(
                                                     horizontal: 8.0,
                                                   ),
                                                   child: Text(
@@ -576,8 +605,11 @@ class _HomePageState extends State<HomePage> {
                                     //Footer
                                     Container(
                                       alignment: Alignment.center,
-                                      height: MediaQuery.of(context).size.height / 6,
-                                      width: MediaQuery.of(context).size.width - 100,
+                                      height:
+                                          MediaQuery.of(context).size.height /
+                                              6,
+                                      width: MediaQuery.of(context).size.width -
+                                          100,
                                       //color: Colors.white,
                                       child: Text(
                                         "Designed & Built by Raunak 💙 Flutter",
